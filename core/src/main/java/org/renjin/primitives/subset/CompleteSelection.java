@@ -87,6 +87,10 @@ public class CompleteSelection extends Selection {
     };
   }
 
+  private boolean isEmpty() {
+    return source.length() > 0;
+  }
+
   @Override
   public int getSelectedDimensionCount() {
     return sourceDim.length();

@@ -125,4 +125,8 @@ public class CoordinateMatrixSelection extends Selection {
       }
     };
   }
+
+  private boolean isEmpty() {
+    return coordinateMatrix.getNumRows() > 0;
+  }
 }

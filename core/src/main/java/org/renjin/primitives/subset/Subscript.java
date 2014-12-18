@@ -52,7 +52,9 @@ public abstract class Subscript {
     return false;
   }
 
-  public boolean selectsSingleElement() {
-    return getCount() == 1;
+  public abstract boolean selectsSingleElement();
+
+  public boolean isEmpty() {
+    return getCount() == 0;
   }
 }

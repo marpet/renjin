@@ -34,14 +34,6 @@ public abstract class Selection implements Iterable<Integer> {
 
   
   public abstract Iterable<Integer> getSelectionAlongDimension(int dimensionIndex);
-  
-  /**
-   * 
-   * @return true if this ElementSet selects no elements
-   */
-  public boolean isEmpty() {
-    return getElementCount() == 0;
-  }
 
   protected abstract AtomicVector getNames(int dimensionIndex);
   

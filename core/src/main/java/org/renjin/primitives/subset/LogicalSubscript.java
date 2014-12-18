@@ -72,4 +72,14 @@ public class LogicalSubscript extends Subscript {
   public int getAt(int i) {
     return indices[i];
   }
+
+  @Override
+  public boolean selectsSingleElement() {
+    return false;
+  }
+
+  @Override
+  public boolean isEmpty() {
+    return count > 0;
+  }
 }

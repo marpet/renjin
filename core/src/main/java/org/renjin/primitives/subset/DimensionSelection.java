@@ -184,6 +184,15 @@ public class DimensionSelection extends Selection {
     };
   }
 
+  private boolean isEmpty() {
+    for(int i=0;i!= subscripts.length; ++i) {
+      if(subscripts[i].isEmpty()) {
+        return true;
+      }
+    }
+    return false;
+  }
+
   @Override
   protected Vector selectDimensionNames(int dimIndex, Vector sourceNames) {
     Subscript subscript = subscripts[dimIndex];

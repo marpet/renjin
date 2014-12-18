@@ -53,4 +53,9 @@ public class NamedSubscript extends Subscript {
   public int getAt(int i) {
     return indices[i];
   }
+
+  @Override
+  public boolean selectsSingleElement() {
+    return false;
+  }
 }

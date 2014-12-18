@@ -48,4 +48,9 @@ public class MissingSubscript extends Subscript {
   public boolean definitelySelectsAllElements() {
     return true;
   }
+
+  @Override
+  public boolean selectsSingleElement() {
+    return sourceDimensionLength == 1;
+  }
 }
