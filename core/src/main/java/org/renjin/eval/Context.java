@@ -191,7 +191,7 @@ public class Context {
     } else if(expression instanceof ExpressionVector) {
       return evaluateExpressionVector((ExpressionVector) expression, rho);
     } else if(expression instanceof FunctionCall) {
-      return evaluateCall((FunctionCall) expression, rho);
+      return ((FunctionCall) expression).evaluate(this, rho);
     } else if(expression instanceof Promise) {
       return expression.force(this);
     } else if(expression != Null.INSTANCE && expression instanceof PromisePairList) {
@@ -200,7 +200,7 @@ public class Context {
       clearInvisibleFlag();
       return expression;
     }
-  }
+  } 
 
   public <T> T getState(Class<T> clazz) {
     if(stateMap != null) {
@@ -256,28 +256,6 @@ public class Context {
     }
   }
 
-  private SEXP evaluateCall(FunctionCall call, Environment rho) {
-    clearInvisibleFlag();
-    Function functionExpr = evaluateFunction(call.getFunction(), rho);
-    return functionExpr.apply(this, rho, call, call.getArguments());
-  }
-
-  private Function evaluateFunction(SEXP functionExp, Environment rho) {
-    if(functionExp instanceof Symbol) {
-      Symbol symbol = (Symbol) functionExp;
-      Function fn = rho.findFunction(this, symbol);
-      if(fn == null) {
-        throw new EvalException("could not find function '%s'", symbol.getPrintName());      
-      }
-      return fn;
-    } else {
-      SEXP evaluated = evaluate(functionExp, rho).force(this);
-      if(!(evaluated instanceof Function)) {
-        throw new EvalException("'function' of lang expression is of unsupported type '%s'", evaluated.getTypeName());
-      }
-      return (Function)evaluated;
-    }
-  }
 
   /**
    *

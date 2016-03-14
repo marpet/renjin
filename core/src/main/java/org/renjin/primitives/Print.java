@@ -70,7 +70,11 @@ public class Print {
 
   @Internal("print.function")
   public static void printFunction(@Current Context context, SEXP x, boolean useSource) throws IOException {
-    context.getSession().getStdOut().println(x.toString());
+    if(x instanceof PrimitiveFunction) {
+      context.getSession().getStdOut().println(".Primitive(\"" + ((PrimitiveFunction) x).getName() + "\")");
+    } else {
+      context.getSession().getStdOut().println(x.toString());
+    }
     context.getSession().getStdOut().flush();
   }
 
@@ -173,8 +177,23 @@ public class Print {
 
     @Override
     public void visitSpecial(SpecialFunction special) {
-      out.append(".Builtin(").append(StringLiterals.format(special.getName(), "NA"));
+      visitPrimitive(special);
     }
+
+    @Override
+    public void visit(BuiltinFunction builtin) {
+      visitPrimitive(builtin);
+    }
+
+    @Override
+    public void visit(PrimitiveFunction primitive) {
+      visitPrimitive(primitive);
+    }
+
+    private void visitPrimitive(PrimitiveFunction primitive) {
+      out.append(".Primitive(").append(StringLiterals.format(primitive.getName(), "NA")).append(")\n");
+    }
+
 
     private <T> void printVector(Iterable<T> vector, Alignment align, Function<T, String> printer, String typeName) {
       SEXP sexp = (SEXP)vector;

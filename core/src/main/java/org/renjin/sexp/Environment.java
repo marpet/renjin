@@ -223,6 +223,10 @@ public class Environment extends AbstractSEXP implements Recursive, HasNamedValu
 
   public void setVariable(Symbol symbol, SEXP value) {
     
+//    if(name != null) {
+//      System.out.println("Setting " + getName() + "$" + symbol);
+//    }
+    
     if(value == Symbol.UNBOUND_VALUE) {
       throw new EvalException("Unbound: " + symbol);
     }

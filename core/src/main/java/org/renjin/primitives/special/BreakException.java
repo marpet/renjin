@@ -27,7 +27,6 @@ public class BreakException extends ControlFlowException {
   public static final BreakException INSTANCE = new BreakException();
   
   private BreakException() {
-    
   }
   
 }

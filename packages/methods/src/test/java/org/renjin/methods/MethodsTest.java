@@ -11,6 +11,7 @@ import org.renjin.parser.RParser;
 import org.renjin.sexp.ExpressionVector;
 import org.renjin.sexp.IntVector;
 import org.renjin.sexp.SEXP;
+import org.renjin.sexp.StringArrayVector;
 
 import java.io.IOException;
 import java.io.StringReader;
@@ -18,7 +19,6 @@ import java.io.StringReader;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 
-@Ignore
 public class MethodsTest {
 
     private Session session;
@@ -59,5 +59,14 @@ public class MethodsTest {
         
         assertThat(dim.getElementAsInt(0), equalTo(12));
         assertThat(dim.getElementAsInt(1), equalTo(1));
+    }
+    
+    @Test
+    public void overloadDollar() throws IOException {
+        eval("setClass('A', representation('numeric'))");
+        eval("setMethod('$', 'A', function(x, name) name)");
+        eval("a <- new('A')");
+        
+        assertThat(eval("a$foo"), equalTo((SEXP)new StringArrayVector("foo")));
     }
 }

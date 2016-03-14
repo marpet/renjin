@@ -307,7 +307,7 @@ public class Methods {
       }
       return value;
     } else {
-      do_set_prim_method(context, (PrimitiveFunction)op, code_string, fundef, mlist);
+      do_set_prim_method(context, (PrimitiveFunction) op, code_string, fundef, mlist);
       return fname;
     }
   }
@@ -333,6 +333,12 @@ public class Methods {
   public static SEXP standardGeneric(@Current Context context, Symbol fname, SEXP fdef) {
     throw new UnsupportedOperationException();
   }
+  
+  @Builtin
+  public static SEXP standardGeneric(@Current Context context, String fname, PrimitiveFunction primitive) {
+    return context.getSession().getSingleton(MethodDispatch.class)
+        .standardGeneric(context, Symbol.get(fname), context.getEnvironment(), primitive);
+  }
 
   @Builtin
   public static SEXP standardGeneric(@Current Context context, @Current Environment env, String fname) {
@@ -346,7 +352,7 @@ public class Methods {
     //            _("'standardGeneric' called without 'methods' dispatch enabled (will be ignored)"));
     //      R_set_standardGeneric_ptr(dispatchNonGeneric, NULL);
     //      ptr = R_get_standardGeneric_ptr();
-    //      }
+    //      }dp
 
   
     if(Strings.isNullOrEmpty(fname)) {

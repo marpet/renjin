@@ -223,7 +223,18 @@ public class S3 {
         ((Symbol)call.getFunction()).getPrintName().endsWith(".default")) {
       return null;
     }
-
+    
+    if(Types.isS4(object) && hasMethods(name)) {
+      // Try to get the generic function
+      // this is like a stand-in for the primitive that handles the dispatching
+      Function genericFunction = findGenericFunction(rho, name, "base", object.getS3Class().getElementAsString(0));
+      if(genericFunction != null) {
+        FunctionCall genericCall = new FunctionCall(genericFunction, args);
+        return context.evaluate(genericCall);
+      }
+    }
+    
+    
     GenericMethod method = Resolver
       .start(context, name, object)
       .withBaseDefinitionEnvironment()
@@ -237,6 +248,29 @@ public class S3 {
 
     return method.doApply(context, rho,
         reassembleAndEvaluateArgs(object, args, context, rho));
+  }
+
+  private static Function findGenericFunction(Environment rho, String name, String base, String className) {
+    Symbol tableName = Symbol.get(".__T__" + name + ":" + base);
+
+    while(rho != Environment.EMPTY) {
+      SEXP tableSexp = rho.getVariable(tableName);
+      if(tableSexp != Symbol.UNBOUND_VALUE) {
+        Environment table = (Environment) tableSexp;
+        SEXP methodSexp = table.getVariable(className);
+        if(methodSexp != Symbol.UNBOUND_VALUE) {
+          Function method = (Function) methodSexp;
+          return method;
+        }
+      }
+    }
+    
+    return null;
+  }
+
+  private static boolean hasMethods(String name) {
+    // TODO:
+    return name.equals("$");
   }
 
   public static SEXP tryDispatchFromPrimitive(Context context, Environment rho, FunctionCall call,
@@ -763,4 +797,83 @@ public class S3 {
       }
     }
   }
+  
+//  
+///* try to dispatch the formal method for this primitive op, by calling
+//   the stored generic function corresponding to the op.	 Requires that
+//   the methods be set up to return a special object rather than trying
+//   to evaluate the default (which would get us into a loop). */
+//
+//  /* called from DispatchOrEval, DispatchGroup, do_matprod
+//     When called from the first the arguments have been enclosed in
+//     promises, but not from the other two: there all the arguments have
+//     already been evaluated.
+//   */
+//  SEXP possible_dispatch(SEXP call, SEXP op, SEXP args, SEXP rho,
+//                      boolean promisedArgs)
+//  {
+//    SEXP fundef, value, mlist=R_NilValue, s, a, b;
+//    int offset;
+//    prim_methods_t current;
+//    offset = PRIMOFFSET(op);
+//    if(offset < 0 || offset > curMaxOffset)
+//      error(_("invalid primitive operation given for dispatch"));
+//    current = prim_methods[offset];
+//    if(current == NO_METHODS || current == SUPPRESSED)
+//      return(NULL);
+//    /* check that the methods for this function have been set */
+//    if(current == NEEDS_RESET) {
+//	/* get the methods and store them in the in-core primitive
+//	   method table.	The entries will be preserved via
+//	   R_preserveobject, so later we can just grab mlist from
+//	   prim_mlist */
+//      do_set_prim_method(op, "suppressed", R_NilValue, mlist);
+//      PROTECT(mlist = get_primitive_methods(op, rho));
+//      do_set_prim_method(op, "set", R_NilValue, mlist);
+//      current = prim_methods[offset]; /* as revised by do_set_prim_method */
+//      UNPROTECT(1);
+//    }
+//    mlist = prim_mlist[offset];
+//    if(mlist && !isNull(mlist)
+//        && quick_method_check_ptr) {
+//      value = (*quick_method_check_ptr)(args, mlist, op);
+//      if(isPrimitive(value))
+//        return(NULL);
+//      if(isFunction(value)) {
+//	    /* found a method, call it with promised args */
+//        if(!promisedArgs) {
+//          PROTECT(s = promiseArgs(CDR(call), rho));
+//          if (length(s) != length(args)) error(_("dispatch error"));
+//          for (a = args, b = s; a != R_NilValue; a = CDR(a), b = CDR(b))
+//            SET_PRVALUE(CAR(b), CAR(a));
+//          value =  applyClosure(call, value, s, rho, R_NilValue);
+//          UNPROTECT(1);
+//          return value;
+//        } else
+//          return applyClosure(call, value, args, rho, R_NilValue);
+//      }
+//	/* else, need to perform full method search */
+//    }
+//    fundef = prim_generics[offset];
+//    if(!fundef || TYPEOF(fundef) != CLOSXP)
+//      error(_("primitive function \"%s\" has been set for methods but no generic function supplied"),
+//          PRIMNAME(op));
+//    /* To do:  arrange for the setting to be restored in case of an
+//       error in method search */
+//    if(!promisedArgs) {
+//      PROTECT(s = promiseArgs(CDR(call), rho));
+//      if (length(s) != length(args)) error(_("dispatch error"));
+//      for (a = args, b = s; a != R_NilValue; a = CDR(a), b = CDR(b))
+//        SET_PRVALUE(CAR(b), CAR(a));
+//      value = applyClosure(call, fundef, s, rho, R_NilValue);
+//      UNPROTECT(1);
+//    } else
+//      value = applyClosure(call, fundef, args, rho, R_NilValue);
+//    prim_methods[offset] = current;
+//    if(value == deferred_default_object)
+//      return Null.INSTANCE;
+//    else
+//      return value;
+//  }
+
 }

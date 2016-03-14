@@ -21,6 +21,9 @@
 
 package org.renjin.sexp;
 
+import org.renjin.eval.Context;
+import org.renjin.eval.EvalException;
+
 /**
  * Expression representing a call to an R function, consisting of
  * a function reference and a list of arguments.
@@ -149,6 +152,50 @@ public class FunctionCall extends PairList.Node {
     return Null.INSTANCE;
   }
 
+
+  public SEXP evaluate(Context context, Environment rho) {
+    
+   // System.out.println("Callsite" + System.identityHashCode(this) + "," + getFunction().toString() + "," + environmentChain(rho));
+    
+    context.clearInvisibleFlag();
+    Function functionExpr = evaluateFunction(this.getFunction(), context, rho);
+    return functionExpr.apply(context, rho, this, getArguments());
+  }
+
+  private String environmentChain(Environment rho) {
+    StringBuilder s = new StringBuilder();
+    while(rho != Environment.EMPTY) {
+      if(s.length() > 0) {
+        s.append(" -> ");
+      }
+      s.append(rho.getName());
+      if(rho.isLocked()) {
+        s.append("*");
+      }
+      rho = rho.getParent();
+    }
+    return s.toString();
+  }
+
+
+  private Function evaluateFunction(SEXP functionExp, Context context, Environment rho) {
+    if(functionExp instanceof Symbol) {
+      Symbol symbol = (Symbol) functionExp;
+      Function fn = rho.findFunction(context, symbol);
+      if(fn == null) {
+        throw new EvalException("could not find function '%s'", symbol.getPrintName());
+      }
+      return fn;
+    } else {
+      SEXP evaluated = context.evaluate(functionExp, rho).force(context);
+      if(!(evaluated instanceof Function)) {
+        throw new EvalException("'function' of lang expression is of unsupported type '%s'", evaluated.getTypeName());
+      }
+      return (Function)evaluated;
+    }
+  }
+  
+  
   public static class Builder extends PairList.Builder {
 
     public Builder add(SEXP tag, SEXP s) {
@@ -162,7 +209,6 @@ public class FunctionCall extends PairList.Node {
       }
       return this;
     }
-
   }
 
 }
