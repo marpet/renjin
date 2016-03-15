@@ -227,8 +227,9 @@ public class S3 {
     if(Types.isS4(object) && hasMethods(name)) {
       // Try to get the generic function
       // this is like a stand-in for the primitive that handles the dispatching
-      Function genericFunction = findGenericFunction(rho, name, "base", object.getS3Class().getElementAsString(0));
+      Function genericFunction = findGenericFunction(context, rho, name, "base", object.getS3Class().getElementAsString(0));
       if(genericFunction != null) {
+        java.lang.System.out.println("Dispatching to " + name + "." + object.getS3Class() + "...");
         FunctionCall genericCall = new FunctionCall(genericFunction, args);
         return context.evaluate(genericCall);
       }
@@ -250,19 +251,20 @@ public class S3 {
         reassembleAndEvaluateArgs(object, args, context, rho));
   }
 
-  private static Function findGenericFunction(Environment rho, String name, String base, String className) {
+  private static Function findGenericFunction(Context context, Environment rho, String name, String base, String className) {
     Symbol tableName = Symbol.get(".__T__" + name + ":" + base);
 
     while(rho != Environment.EMPTY) {
       SEXP tableSexp = rho.getVariable(tableName);
       if(tableSexp != Symbol.UNBOUND_VALUE) {
-        Environment table = (Environment) tableSexp;
+        Environment table = (Environment) tableSexp.force(context);
         SEXP methodSexp = table.getVariable(className);
         if(methodSexp != Symbol.UNBOUND_VALUE) {
           Function method = (Function) methodSexp;
           return method;
         }
       }
+      rho = rho.getParent();
     }
     
     return null;

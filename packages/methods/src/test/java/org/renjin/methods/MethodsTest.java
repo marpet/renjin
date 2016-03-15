@@ -57,8 +57,8 @@ public class MethodsTest {
         
         IntVector dim = (IntVector) eval("dim(m2)");
         
-        assertThat(dim.getElementAsInt(0), equalTo(12));
-        assertThat(dim.getElementAsInt(1), equalTo(1));
+        assertThat(dim.getElementAsInt(0), equalTo(4));
+        assertThat(dim.getElementAsInt(1), equalTo(3));
     }
     
     @Test
@@ -68,5 +68,13 @@ public class MethodsTest {
         eval("a <- new('A')");
         
         assertThat(eval("a$foo"), equalTo((SEXP)new StringArrayVector("foo")));
+    }
+    
+    @Test
+    public void referenceClasses() throws IOException {
+        eval(" Person <- setRefClass('Person')");
+        eval("x <- Person$new()");
+        
+//         assertThat(eval("class(x)"), equalTo(\"Person\"))  ")
     }
 }
