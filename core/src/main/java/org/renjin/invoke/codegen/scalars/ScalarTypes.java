@@ -1,6 +1,6 @@
 package org.renjin.invoke.codegen.scalars;
 
-import com.google.common.collect.Maps;
+import com.google.bc.common.collect.Maps;
 import org.apache.commons.math.complex.Complex;
 import org.renjin.invoke.codegen.GeneratorDefinitionException;
 import org.renjin.sexp.Logical;

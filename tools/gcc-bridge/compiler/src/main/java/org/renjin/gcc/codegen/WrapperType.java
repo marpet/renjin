@@ -1,6 +1,6 @@
 package org.renjin.gcc.codegen;
 
-import com.google.common.collect.ImmutableList;
+import com.google.bc.common.collect.ImmutableList;
 import org.objectweb.asm.Type;
 import org.renjin.gcc.gimple.type.GimplePointerType;
 import org.renjin.gcc.gimple.type.GimplePrimitiveType;

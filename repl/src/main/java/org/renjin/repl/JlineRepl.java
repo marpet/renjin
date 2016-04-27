@@ -1,7 +1,7 @@
 package org.renjin.repl;
 
-import com.google.common.base.Strings;
-import com.google.common.base.Throwables;
+import com.google.bc.common.base.Strings;
+import com.google.bc.common.base.Throwables;
 import jline.UnsupportedTerminal;
 import jline.console.ConsoleReader;
 import jline.console.UserInterruptException;

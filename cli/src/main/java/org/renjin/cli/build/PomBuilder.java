@@ -1,9 +1,9 @@
 package org.renjin.cli.build;
 
-import com.google.common.base.Strings;
-import com.google.common.collect.Iterables;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Sets;
+import com.google.bc.common.base.Strings;
+import com.google.bc.common.collect.Iterables;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Sets;
 import org.apache.maven.model.*;
 import org.apache.maven.model.io.xpp3.MavenXpp3Writer;
 import org.renjin.RenjinVersion;

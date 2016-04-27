@@ -1,10 +1,10 @@
 package org.renjin.primitives.packaging;
 
-import com.google.common.base.Charsets;
-import com.google.common.base.Joiner;
-import com.google.common.base.Optional;
-import com.google.common.collect.*;
-import com.google.common.io.CharSource;
+import com.google.bc.common.base.Charsets;
+import com.google.bc.common.base.Joiner;
+import com.google.bc.common.base.Optional;
+import com.google.bc.common.collect.*;
+import com.google.bc.common.io.CharSource;
 import org.renjin.eval.Context;
 import org.renjin.eval.EvalException;
 import org.renjin.invoke.annotations.SessionScoped;

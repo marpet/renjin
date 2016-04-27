@@ -1,6 +1,6 @@
 package org.renjin.cli;
 
-import com.google.common.collect.Lists;
+import com.google.bc.common.collect.Lists;
 import jline.console.ConsoleReader;
 import org.eclipse.aether.artifact.Artifact;
 import org.eclipse.aether.resolution.ArtifactResult;

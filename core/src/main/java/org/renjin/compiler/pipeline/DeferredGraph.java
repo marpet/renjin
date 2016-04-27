@@ -1,7 +1,7 @@
 package org.renjin.compiler.pipeline;
 
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Maps;
 import org.renjin.compiler.pipeline.optimize.Optimizers;
 import org.renjin.primitives.vector.DeferredComputation;
 import org.renjin.primitives.vector.MemoizedComputation;

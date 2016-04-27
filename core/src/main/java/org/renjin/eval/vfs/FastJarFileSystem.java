@@ -1,6 +1,6 @@
 package org.renjin.eval.vfs;
 
-import com.google.common.collect.Lists;
+import com.google.bc.common.collect.Lists;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.commons.vfs2.*;

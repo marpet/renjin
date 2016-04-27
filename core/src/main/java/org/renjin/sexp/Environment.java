@@ -21,9 +21,9 @@
 
 package org.renjin.sexp;
 
-import com.google.common.base.Predicate;
-import com.google.common.collect.Sets;
-import com.google.common.collect.UnmodifiableIterator;
+import com.google.bc.common.base.Predicate;
+import com.google.bc.common.collect.Sets;
+import com.google.bc.common.collect.UnmodifiableIterator;
 import org.renjin.base.BaseFrame;
 import org.renjin.eval.Context;
 import org.renjin.eval.EvalException;

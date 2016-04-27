@@ -21,10 +21,10 @@
 
 package org.renjin.primitives.files;
 
-import com.google.common.base.Predicate;
-import com.google.common.base.Predicates;
-import com.google.common.collect.Lists;
-import com.google.common.io.ByteStreams;
+import com.google.bc.common.base.Predicate;
+import com.google.bc.common.base.Predicates;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.io.ByteStreams;
 import org.apache.commons.vfs2.*;
 import org.renjin.eval.Context;
 import org.renjin.eval.EvalException;

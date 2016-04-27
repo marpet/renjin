@@ -1,8 +1,8 @@
 package org.renjin.compiler.ir.tree;
 
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
-import com.google.common.collect.Sets;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Maps;
+import com.google.bc.common.collect.Sets;
 import org.renjin.compiler.cfg.BasicBlock;
 import org.renjin.compiler.ir.tac.expressions.Expression;
 import org.renjin.compiler.ir.tac.expressions.LValue;

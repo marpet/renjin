@@ -1,8 +1,8 @@
 package org.renjin.sexp;
 
-import com.google.common.base.Strings;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
+import com.google.bc.common.base.Strings;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Maps;
 import org.renjin.eval.EvalException;
 import org.renjin.primitives.vector.ConvertingStringVector;
 import org.renjin.primitives.vector.RowNamesVector;

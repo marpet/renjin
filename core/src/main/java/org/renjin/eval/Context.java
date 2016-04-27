@@ -21,8 +21,8 @@
 
 package org.renjin.eval;
 
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Maps;
 import org.apache.commons.vfs2.FileObject;
 import org.apache.commons.vfs2.FileSystemException;
 import org.apache.commons.vfs2.FileSystemManager;

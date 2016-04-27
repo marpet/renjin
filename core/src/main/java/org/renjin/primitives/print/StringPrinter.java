@@ -1,6 +1,6 @@
 package org.renjin.primitives.print;
 
-import com.google.common.base.Function;
+import com.google.bc.common.base.Function;
 import org.renjin.parser.StringLiterals;
 import org.renjin.sexp.StringVector;
 

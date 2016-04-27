@@ -2,8 +2,8 @@ package org.renjin.gcc.gimple.statement;
 
 import com.fasterxml.jackson.annotation.*;
 import com.fasterxml.jackson.annotation.JsonSubTypes.Type;
-import com.google.common.base.Predicate;
-import com.google.common.base.Predicates;
+import com.google.bc.common.base.Predicate;
+import com.google.bc.common.base.Predicates;
 import org.renjin.gcc.gimple.GimpleBasicBlock;
 import org.renjin.gcc.gimple.GimpleVisitor;
 import org.renjin.gcc.gimple.expr.GimpleExpr;

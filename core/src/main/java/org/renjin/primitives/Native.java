@@ -1,9 +1,9 @@
 package org.renjin.primitives;
 
-import com.google.common.base.Charsets;
-import com.google.common.base.Strings;
-import com.google.common.collect.Iterables;
-import com.google.common.collect.Lists;
+import com.google.bc.common.base.Charsets;
+import com.google.bc.common.base.Strings;
+import com.google.bc.common.collect.Iterables;
+import com.google.bc.common.collect.Lists;
 import org.renjin.base.Base;
 import org.renjin.eval.Context;
 import org.renjin.eval.EvalException;

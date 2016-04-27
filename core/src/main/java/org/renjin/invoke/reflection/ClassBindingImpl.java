@@ -1,8 +1,8 @@
 package org.renjin.invoke.reflection;
 
-import com.google.common.collect.ArrayListMultimap;
-import com.google.common.collect.Maps;
-import com.google.common.collect.Multimap;
+import com.google.bc.common.collect.ArrayListMultimap;
+import com.google.bc.common.collect.Maps;
+import com.google.bc.common.collect.Multimap;
 import org.renjin.eval.Context;
 import org.renjin.eval.EvalException;
 import org.renjin.invoke.ClassBinding;

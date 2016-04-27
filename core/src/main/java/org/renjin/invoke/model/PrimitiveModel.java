@@ -1,8 +1,8 @@
 package org.renjin.invoke.model;
 
-import com.google.common.base.Joiner;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Sets;
+import com.google.bc.common.base.Joiner;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Sets;
 import org.renjin.invoke.codegen.GeneratorDefinitionException;
 import org.renjin.invoke.codegen.WrapperGenerator2;
 import org.renjin.invoke.model.JvmMethod;

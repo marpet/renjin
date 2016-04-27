@@ -1,9 +1,9 @@
 package org.renjin.compiler.ir.tac.expressions;
 
-import com.google.common.base.Joiner;
-import com.google.common.base.Strings;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Sets;
+import com.google.bc.common.base.Joiner;
+import com.google.bc.common.base.Strings;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Sets;
 import org.renjin.compiler.runtime.CompiledRuntime;
 import org.renjin.compiler.runtime.UnimplementedPrimitive;
 import org.renjin.eval.Context;

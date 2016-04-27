@@ -10,9 +10,9 @@ import org.renjin.eval.Context;
 import org.renjin.sexp.SEXP;
 
 
-import com.google.common.base.Joiner;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Sets;
+import com.google.bc.common.base.Joiner;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Sets;
 
 public class PhiFunction implements Expression {
 

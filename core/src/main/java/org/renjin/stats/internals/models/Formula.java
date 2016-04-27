@@ -1,8 +1,8 @@
 package org.renjin.stats.internals.models;
 
-import com.google.common.base.Functions;
-import com.google.common.collect.Collections2;
-import com.google.common.collect.Lists;
+import com.google.bc.common.base.Functions;
+import com.google.bc.common.collect.Collections2;
+import com.google.bc.common.collect.Lists;
 import org.renjin.primitives.matrix.IntMatrixBuilder;
 import org.renjin.sexp.*;
 

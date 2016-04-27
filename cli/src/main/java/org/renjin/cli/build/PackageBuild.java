@@ -1,7 +1,7 @@
 package org.renjin.cli.build;
 
-import com.google.common.base.Charsets;
-import com.google.common.io.Files;
+import com.google.bc.common.base.Charsets;
+import com.google.bc.common.io.Files;
 import org.codehaus.plexus.util.FileUtils;
 import org.eclipse.aether.RepositorySystem;
 import org.eclipse.aether.RepositorySystemSession;

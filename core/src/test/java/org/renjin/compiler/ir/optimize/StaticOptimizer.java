@@ -9,7 +9,7 @@ import org.renjin.compiler.ir.tac.IRBody;
 import org.renjin.compiler.ir.tac.IRFunction;
 import org.renjin.compiler.ir.tac.IRProgram;
 
-import com.google.common.collect.Lists;
+import com.google.bc.common.collect.Lists;
 
 
 /**

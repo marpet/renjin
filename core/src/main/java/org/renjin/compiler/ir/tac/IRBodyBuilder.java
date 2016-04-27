@@ -1,7 +1,7 @@
 package org.renjin.compiler.ir.tac;
 
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Maps;
 import org.renjin.compiler.ir.tac.expressions.*;
 import org.renjin.compiler.ir.tac.functions.FunctionCallTranslator;
 import org.renjin.compiler.ir.tac.functions.FunctionCallTranslators;

@@ -24,10 +24,10 @@
 
 package org.renjin.parser;
 
-import com.google.common.collect.Lists;
-import com.google.common.io.CharSource;
-import com.google.common.io.CharStreams;
-import com.google.common.io.Closeables;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.io.CharSource;
+import com.google.bc.common.io.CharStreams;
+import com.google.bc.common.io.Closeables;
 import org.renjin.sexp.*;
 
 import java.io.IOException;

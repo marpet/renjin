@@ -1,6 +1,6 @@
 package org.renjin.script;
 
-import com.google.common.io.CharSource;
+import com.google.bc.common.io.CharSource;
 import org.renjin.eval.Context;
 import org.renjin.eval.EvalException;
 import org.renjin.eval.Session;

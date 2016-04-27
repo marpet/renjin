@@ -1,6 +1,6 @@
 package org.renjin.utils;
 
-import com.google.common.collect.Lists;
+import com.google.bc.common.collect.Lists;
 import org.renjin.eval.Context;
 import org.renjin.eval.EvalException;
 import org.renjin.invoke.annotations.Current;

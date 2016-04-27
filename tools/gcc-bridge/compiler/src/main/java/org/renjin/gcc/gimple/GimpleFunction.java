@@ -1,9 +1,9 @@
 package org.renjin.gcc.gimple;
 
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.google.common.base.Joiner;
-import com.google.common.base.Predicate;
-import com.google.common.collect.Lists;
+import com.google.bc.common.base.Joiner;
+import com.google.bc.common.base.Predicate;
+import com.google.bc.common.collect.Lists;
 import org.renjin.gcc.InternalCompilerException;
 import org.renjin.gcc.gimple.expr.GimpleExpr;
 import org.renjin.gcc.gimple.expr.GimpleLValue;

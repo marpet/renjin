@@ -1,6 +1,6 @@
 package org.renjin.compiler;
 
-import com.google.common.collect.Maps;
+import com.google.bc.common.collect.Maps;
 import org.objectweb.asm.Label;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;

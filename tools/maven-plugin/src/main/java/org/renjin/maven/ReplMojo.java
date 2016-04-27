@@ -13,7 +13,7 @@ import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
 import org.apache.maven.project.MavenProject;
 
-import com.google.common.collect.Lists;
+import com.google.bc.common.collect.Lists;
 
 /**
  * @goal repl

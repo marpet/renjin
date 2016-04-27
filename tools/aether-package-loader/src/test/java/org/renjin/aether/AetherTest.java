@@ -1,6 +1,6 @@
 package org.renjin.aether;
 
-import com.google.common.base.Joiner;
+import com.google.bc.common.base.Joiner;
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
 import org.hamcrest.TypeSafeMatcher;

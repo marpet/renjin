@@ -1,6 +1,6 @@
 package org.renjin.gcc.codegen.fatptr;
 
-import com.google.common.base.Optional;
+import com.google.bc.common.base.Optional;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.Type;

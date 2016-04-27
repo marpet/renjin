@@ -1,7 +1,7 @@
 package org.renjin.methods;
 
-import com.google.common.base.Preconditions;
-import com.google.common.collect.Maps;
+import com.google.bc.common.base.Preconditions;
+import com.google.bc.common.collect.Maps;
 import org.renjin.eval.Calls;
 import org.renjin.eval.Context;
 import org.renjin.eval.EvalException;

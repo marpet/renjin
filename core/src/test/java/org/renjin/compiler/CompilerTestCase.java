@@ -1,7 +1,7 @@
 package org.renjin.compiler;
 
-import com.google.common.base.Charsets;
-import com.google.common.io.Resources;
+import com.google.bc.common.base.Charsets;
+import com.google.bc.common.io.Resources;
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
 import org.hamcrest.TypeSafeMatcher;

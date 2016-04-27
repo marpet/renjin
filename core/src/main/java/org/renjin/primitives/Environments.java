@@ -1,8 +1,8 @@
 package org.renjin.primitives;
 
-import com.google.common.base.Objects;
-import com.google.common.base.Predicate;
-import com.google.common.collect.Lists;
+import com.google.bc.common.base.Objects;
+import com.google.bc.common.base.Predicate;
+import com.google.bc.common.collect.Lists;
 import org.renjin.eval.Context;
 import org.renjin.eval.EvalException;
 import org.renjin.invoke.annotations.*;

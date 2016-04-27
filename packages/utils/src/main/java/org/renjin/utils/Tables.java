@@ -1,9 +1,9 @@
 package org.renjin.utils;
 
 
-import com.google.common.base.Strings;
-import com.google.common.collect.Maps;
-import com.google.common.collect.Sets;
+import com.google.bc.common.base.Strings;
+import com.google.bc.common.collect.Maps;
+import com.google.bc.common.collect.Sets;
 import org.renjin.eval.Context;
 import org.renjin.invoke.annotations.Current;
 import org.renjin.parser.NumericLiterals;

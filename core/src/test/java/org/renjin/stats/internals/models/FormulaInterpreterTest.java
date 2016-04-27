@@ -1,6 +1,6 @@
 package org.renjin.stats.internals.models;
 
-import com.google.common.collect.Lists;
+import com.google.bc.common.collect.Lists;
 import org.junit.Test;
 import org.renjin.eval.EvalException;
 import org.renjin.parser.RParser;

@@ -1,6 +1,6 @@
 package org.renjin.gcc.analysis;
 
-import com.google.common.base.Predicates;
+import com.google.bc.common.base.Predicates;
 import org.renjin.gcc.gimple.GimpleCompilationUnit;
 import org.renjin.gcc.gimple.GimpleFunction;
 import org.renjin.gcc.gimple.GimpleVarDecl;

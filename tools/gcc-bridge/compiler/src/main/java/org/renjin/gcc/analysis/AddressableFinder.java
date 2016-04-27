@@ -1,6 +1,6 @@
 package org.renjin.gcc.analysis;
 
-import com.google.common.collect.Maps;
+import com.google.bc.common.collect.Maps;
 import org.renjin.gcc.gimple.*;
 import org.renjin.gcc.gimple.expr.*;
 import org.renjin.gcc.gimple.statement.GimpleAssignment;

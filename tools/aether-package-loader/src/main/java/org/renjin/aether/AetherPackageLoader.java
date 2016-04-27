@@ -1,7 +1,7 @@
 package org.renjin.aether;
 
-import com.google.common.base.Optional;
-import com.google.common.collect.Lists;
+import com.google.bc.common.base.Optional;
+import com.google.bc.common.collect.Lists;
 import org.eclipse.aether.DefaultRepositorySystemSession;
 import org.eclipse.aether.RepositoryListener;
 import org.eclipse.aether.RepositorySystem;

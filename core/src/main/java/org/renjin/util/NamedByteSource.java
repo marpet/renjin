@@ -1,6 +1,6 @@
 package org.renjin.util;
 
-import com.google.common.io.ByteSource;
+import com.google.bc.common.io.ByteSource;
 
 import java.io.IOException;
 import java.io.InputStream;

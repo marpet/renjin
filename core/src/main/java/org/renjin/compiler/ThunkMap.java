@@ -7,7 +7,7 @@ import java.util.Set;
 import org.renjin.compiler.ir.tac.expressions.IRThunk;
 
 
-import com.google.common.collect.Maps;
+import com.google.bc.common.collect.Maps;
 
 public class ThunkMap {
   

@@ -20,9 +20,9 @@
  */
 package org.renjin.primitives.io.connections;
 
-import com.google.common.base.Charsets;
-import com.google.common.base.Joiner;
-import com.google.common.base.Strings;
+import com.google.bc.common.base.Charsets;
+import com.google.bc.common.base.Joiner;
+import com.google.bc.common.base.Strings;
 import org.apache.commons.vfs2.FileSystemException;
 import org.renjin.eval.Context;
 import org.renjin.eval.EvalException;

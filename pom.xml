@@ -26,7 +26,7 @@
 
   <groupId>org.renjin</groupId>
   <artifactId>parent</artifactId>
-  <version>0.9.0-SNAPSHOT</version>
+  <version>0.9.0-BC</version>
   <packaging>pom</packaging>
   <name>Renjin Parent</name>
 
@@ -63,20 +63,51 @@
     <developerConnection>scm:git:git@github.com:bedatadriven/renjin.git</developerConnection>
   </scm>
 
+  <!-- We deploy to our nexus server -->
+  <!--<distributionManagement>-->
+    <!--<repository>-->
+      <!--<id>renjin-release</id>-->
+      <!--<name>Renjin Releases</name>-->
+      <!--<url>https://nexus.bedatadriven.com/content/repositories/renjin-release/</url>-->
+    <!--</repository>-->
+    <!--<snapshotRepository>-->
+      <!--<id>renjin-latest</id>-->
+      <!--<name>Renjin Latest Builds</name>-->
+      <!--<url>https://nexus.bedatadriven.com/content/repositories/renjin-latest/</url>-->
+    <!--</snapshotRepository>-->
+  <!--</distributionManagement>-->
   <distributionManagement>
     <repository>
-      <id>renjin-release</id>
-      <name>Renjin Releases</name>
-      <url>https://nexus.bedatadriven.com/content/repositories/renjin-release/</url>
+      <id>snap-repo-public</id>
+      <name>Public Maven Repository for SNAP</name>
+      <url>http://nexus.senbox.net/nexus/content/repositories/releases/</url>
+      <uniqueVersion>false</uniqueVersion>
     </repository>
     <snapshotRepository>
-      <id>renjin-latest</id>
-      <name>Renjin Latest Builds</name>
-      <url>https://nexus.bedatadriven.com/content/repositories/renjin-latest/</url>
+      <id>snap-repo-public</id>
+      <name>Public Maven Snapshot Repository for SNAP</name>
+      <url>http://nexus.senbox.net/nexus/content/repositories/snapshots/</url>
+      <uniqueVersion>false</uniqueVersion>
     </snapshotRepository>
   </distributionManagement>
 
+
   <repositories>
+
+    <!-- Our nexus server were we get the special guava version -->
+    <repository>
+      <id>snap-repo-public</id>
+      <name>Public Maven Repository for SNAP</name>
+      <url>http://nexus.senbox.net/nexus/content/repositories/public/</url>
+      <releases>
+        <enabled>true</enabled>
+        <checksumPolicy>warn</checksumPolicy>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+        <checksumPolicy>warn</checksumPolicy>
+      </snapshots>
+    </repository>
 
     <!-- We go to mvnsearch.org after latest GAE SDK artifacts -->
     <repository>
@@ -84,6 +115,7 @@
       <name>bedatadriven public repo</name>
       <url>https://nexus.bedatadriven.com/content/groups/public/</url>
     </repository>
+
   </repositories>
 
   <build>
@@ -214,11 +246,12 @@
     </dependency>
   </dependencies>
 
+  <!-- we build our own guava in order to have two versions of it on calvalus-->
   <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>com.google.guava</groupId>
-        <artifactId>guava</artifactId>
+        <artifactId>bc-guava</artifactId>
         <version>17.0</version>
       </dependency>
     </dependencies>

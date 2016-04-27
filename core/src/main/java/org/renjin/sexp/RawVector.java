@@ -1,7 +1,7 @@
 package org.renjin.sexp;
 
-import com.google.common.collect.UnmodifiableIterator;
-import com.google.common.primitives.UnsignedBytes;
+import com.google.bc.common.collect.UnmodifiableIterator;
+import com.google.bc.common.primitives.UnsignedBytes;
 
 import java.util.Arrays;
 import java.util.Iterator;

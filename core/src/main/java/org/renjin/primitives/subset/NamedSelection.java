@@ -1,7 +1,7 @@
 package org.renjin.primitives.subset;
 
-import com.google.common.collect.Maps;
-import com.google.common.collect.Sets;
+import com.google.bc.common.collect.Maps;
+import com.google.bc.common.collect.Sets;
 import org.renjin.eval.Context;
 import org.renjin.eval.EvalException;
 import org.renjin.sexp.*;

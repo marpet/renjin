@@ -18,9 +18,9 @@ import org.renjin.compiler.ir.tac.statements.GotoStatement;
 import org.renjin.compiler.ir.tac.statements.Statement;
 
 
-import com.google.common.base.Joiner;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
+import com.google.bc.common.base.Joiner;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Maps;
 
 import edu.uci.ics.jung.algorithms.layout.Layout;
 import edu.uci.ics.jung.algorithms.layout.StaticLayout;

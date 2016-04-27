@@ -1,8 +1,8 @@
 package org.renjin.invoke.codegen;
 
 
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Maps;
 import com.sun.codemodel.*;
 import org.apache.commons.math.complex.Complex;
 import org.renjin.invoke.annotations.PreserveAttributeStyle;

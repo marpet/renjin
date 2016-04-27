@@ -8,9 +8,9 @@ import org.renjin.sexp.Null;
 import org.renjin.sexp.PrimitiveFunction;
 import org.renjin.sexp.SEXP;
 
-import com.google.common.cache.CacheBuilder;
-import com.google.common.cache.CacheLoader;
-import com.google.common.cache.LoadingCache;
+import com.google.bc.common.cache.CacheBuilder;
+import com.google.bc.common.cache.CacheLoader;
+import com.google.bc.common.cache.LoadingCache;
 
 public class PrimitiveMethodTable {
 

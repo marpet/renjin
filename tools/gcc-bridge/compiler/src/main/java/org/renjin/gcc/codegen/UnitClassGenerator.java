@@ -1,6 +1,6 @@
 package org.renjin.gcc.codegen;
 
-import com.google.common.collect.Lists;
+import com.google.bc.common.collect.Lists;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.ClassWriter;
 import org.objectweb.asm.MethodVisitor;

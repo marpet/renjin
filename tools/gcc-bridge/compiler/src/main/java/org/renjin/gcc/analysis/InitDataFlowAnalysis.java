@@ -1,8 +1,8 @@
 package org.renjin.gcc.analysis;
 
-import com.google.common.base.Optional;
-import com.google.common.collect.Maps;
-import com.google.common.collect.Sets;
+import com.google.bc.common.base.Optional;
+import com.google.bc.common.collect.Maps;
+import com.google.bc.common.collect.Sets;
 import org.renjin.gcc.gimple.GimpleBasicBlock;
 import org.renjin.gcc.gimple.GimpleFunction;
 import org.renjin.gcc.gimple.GimpleVarDecl;

@@ -1,6 +1,6 @@
 package org.renjin.gcc.gimple.statement;
 
-import com.google.common.base.Predicate;
+import com.google.bc.common.base.Predicate;
 import org.renjin.gcc.gimple.GimpleVisitor;
 import org.renjin.gcc.gimple.expr.GimpleExpr;
 

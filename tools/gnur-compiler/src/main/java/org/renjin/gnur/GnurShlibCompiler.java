@@ -1,10 +1,10 @@
 package org.renjin.gnur;
 
-import com.google.common.base.Joiner;
-import com.google.common.collect.Lists;
-import com.google.common.io.ByteStreams;
-import com.google.common.io.Files;
-import com.google.common.io.Resources;
+import com.google.bc.common.base.Joiner;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.io.ByteStreams;
+import com.google.bc.common.io.Files;
+import com.google.bc.common.io.Resources;
 import org.renjin.gcc.Gcc;
 import org.renjin.gcc.InternalCompilerException;
 

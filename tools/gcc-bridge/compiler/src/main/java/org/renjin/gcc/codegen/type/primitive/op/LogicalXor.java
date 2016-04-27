@@ -1,6 +1,6 @@
 package org.renjin.gcc.codegen.type.primitive.op;
 
-import com.google.common.base.Preconditions;
+import com.google.bc.common.base.Preconditions;
 import org.objectweb.asm.Type;
 import org.renjin.gcc.codegen.MethodGenerator;
 import org.renjin.gcc.codegen.expr.SimpleExpr;

@@ -8,7 +8,7 @@ import org.renjin.sexp.SEXP;
 import org.renjin.sexp.Symbol;
 import org.renjin.sexp.Vector;
 
-import com.google.common.collect.Lists;
+import com.google.bc.common.collect.Lists;
 
 
 public class FactorVariable extends Variable {

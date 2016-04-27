@@ -1,7 +1,7 @@
 package org.renjin.compiler.cfg;
 
-import com.google.common.base.Charsets;
-import com.google.common.io.Resources;
+import com.google.bc.common.base.Charsets;
+import com.google.bc.common.io.Resources;
 import edu.uci.ics.jung.visualization.BasicVisualizationServer;
 import org.renjin.compiler.ir.tac.IRBody;
 import org.renjin.compiler.ir.tac.IRBodyBuilder;

@@ -21,7 +21,7 @@
 
 package org.renjin.appengine;
 
-import com.google.common.annotations.VisibleForTesting;
+import com.google.bc.common.annotations.VisibleForTesting;
 import org.apache.commons.vfs2.CacheStrategy;
 import org.apache.commons.vfs2.FileSystemException;
 import org.apache.commons.vfs2.FileSystemManager;

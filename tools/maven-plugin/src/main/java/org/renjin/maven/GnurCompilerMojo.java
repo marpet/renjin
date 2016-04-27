@@ -1,6 +1,6 @@
 package org.renjin.maven;
 
-import com.google.common.collect.Lists;
+import com.google.bc.common.collect.Lists;
 import org.apache.maven.artifact.Artifact;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;

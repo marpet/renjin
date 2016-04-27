@@ -21,7 +21,7 @@
 
 package org.renjin.base;
 
-import com.google.common.collect.Sets;
+import com.google.bc.common.collect.Sets;
 import org.renjin.eval.Context;
 import org.renjin.packaging.LazyLoadFrame;
 import org.renjin.primitives.Primitives;
@@ -175,7 +175,7 @@ public class BaseFrame implements Frame {
   }
   
   public void load(Context context) throws IOException {
-    Iterable<NamedValue> frame = LazyLoadFrame.load(context, new com.google.common.base.Function<String, InputStream>() {
+    Iterable<NamedValue> frame = LazyLoadFrame.load(context, new com.google.bc.common.base.Function<String, InputStream>() {
 
       @Override
       public InputStream apply(String name) {

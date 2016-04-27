@@ -16,7 +16,7 @@ import org.renjin.compiler.ir.tac.IRBody;
 import org.renjin.compiler.ir.tac.expressions.EnvironmentVariable;
 
 
-import com.google.common.collect.Iterables;
+import com.google.bc.common.collect.Iterables;
 
 public class SsaTransformTest extends CompilerTestCase {
 

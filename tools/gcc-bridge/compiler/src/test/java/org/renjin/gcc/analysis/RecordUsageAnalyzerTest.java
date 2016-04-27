@@ -1,7 +1,7 @@
 package org.renjin.gcc.analysis;
 
-import com.google.common.collect.Iterables;
-import com.google.common.io.Resources;
+import com.google.bc.common.collect.Iterables;
+import com.google.bc.common.io.Resources;
 import org.junit.Before;
 import org.junit.Test;
 import org.renjin.gcc.Gcc;

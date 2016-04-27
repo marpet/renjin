@@ -1,8 +1,8 @@
 package org.renjin.compiler.pipeline;
 
-import com.google.common.base.Joiner;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Sets;
+import com.google.bc.common.base.Joiner;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Sets;
 import org.renjin.primitives.sequence.RepDoubleVector;
 import org.renjin.primitives.vector.DeferredComputation;
 import org.renjin.primitives.vector.MemoizedComputation;

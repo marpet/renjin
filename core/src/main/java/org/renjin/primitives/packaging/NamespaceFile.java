@@ -1,11 +1,11 @@
 package org.renjin.primitives.packaging;
 
-import com.google.common.collect.Iterables;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
-import com.google.common.collect.Sets;
-import com.google.common.io.CharSource;
-import com.google.common.io.Closeables;
+import com.google.bc.common.collect.Iterables;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Maps;
+import com.google.bc.common.collect.Sets;
+import com.google.bc.common.io.CharSource;
+import com.google.bc.common.io.Closeables;
 import org.renjin.eval.Context;
 import org.renjin.eval.EvalException;
 import org.renjin.parser.RParser;

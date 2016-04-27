@@ -21,7 +21,7 @@
 
 package org.renjin.sexp;
 
-import com.google.common.collect.Iterables;
+import com.google.bc.common.collect.Iterables;
 import org.renjin.eval.EvalException;
 import org.renjin.eval.Profiler;
 import org.renjin.parser.NumericLiterals;

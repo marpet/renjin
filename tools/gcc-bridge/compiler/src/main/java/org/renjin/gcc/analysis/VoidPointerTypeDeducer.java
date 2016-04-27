@@ -1,6 +1,6 @@
 package org.renjin.gcc.analysis;
 
-import com.google.common.collect.Sets;
+import com.google.bc.common.collect.Sets;
 import org.renjin.gcc.GimpleCompiler;
 import org.renjin.gcc.gimple.*;
 import org.renjin.gcc.gimple.expr.GimpleConstant;

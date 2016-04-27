@@ -21,10 +21,10 @@
 
 package org.renjin.sexp;
 
-import com.google.common.base.Strings;
-import com.google.common.collect.Iterators;
-import com.google.common.collect.Lists;
-import com.google.common.collect.UnmodifiableIterator;
+import com.google.bc.common.base.Strings;
+import com.google.bc.common.collect.Iterators;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.UnmodifiableIterator;
 import org.apache.commons.math.complex.Complex;
 import org.renjin.eval.EvalException;
 import org.renjin.primitives.Deparse;

@@ -1,7 +1,7 @@
 package org.renjin.gcc.maven;
 
-import com.google.common.base.Strings;
-import com.google.common.collect.Lists;
+import com.google.bc.common.base.Strings;
+import com.google.bc.common.collect.Lists;
 
 import org.apache.maven.artifact.Artifact;
 import org.apache.maven.plugin.AbstractMojo;

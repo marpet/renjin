@@ -21,7 +21,7 @@
 
 package org.renjin.sexp;
 
-import com.google.common.base.Objects;
+import com.google.bc.common.base.Objects;
 import org.renjin.eval.ClosureDispatcher;
 import org.renjin.eval.Context;
 import org.renjin.primitives.special.ReturnException;

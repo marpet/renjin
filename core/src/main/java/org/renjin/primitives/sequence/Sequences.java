@@ -21,7 +21,7 @@
 
 package org.renjin.primitives.sequence;
 
-import com.google.common.annotations.VisibleForTesting;
+import com.google.bc.common.annotations.VisibleForTesting;
 import org.apache.commons.math.linear.RealVector;
 import org.renjin.eval.Calls;
 import org.renjin.eval.Context;

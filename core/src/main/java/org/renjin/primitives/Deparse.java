@@ -22,7 +22,7 @@
 package org.renjin.primitives;
 
 
-import com.google.common.collect.Iterables;
+import com.google.bc.common.collect.Iterables;
 import org.apache.commons.math.complex.Complex;
 import org.renjin.eval.Context;
 import org.renjin.invoke.annotations.Current;

@@ -1,7 +1,7 @@
 package org.renjin.gcc.gimple;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.google.common.base.Predicate;
+import com.google.bc.common.base.Predicate;
 import org.renjin.gcc.gimple.expr.GimpleExpr;
 import org.renjin.gcc.gimple.expr.GimpleSymbolRef;
 import org.renjin.gcc.gimple.expr.GimpleVariableRef;

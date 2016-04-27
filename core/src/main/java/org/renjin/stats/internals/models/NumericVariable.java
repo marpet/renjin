@@ -3,7 +3,7 @@ package org.renjin.stats.internals.models;
 import java.util.Collections;
 import java.util.List;
 
-import com.google.common.collect.Lists;
+import com.google.bc.common.collect.Lists;
 import org.renjin.primitives.matrix.Matrix;
 import org.renjin.sexp.Null;
 import org.renjin.sexp.SEXP;

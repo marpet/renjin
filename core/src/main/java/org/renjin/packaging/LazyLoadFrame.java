@@ -5,7 +5,7 @@ import java.io.DataInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import com.google.common.base.Function;
+import com.google.bc.common.base.Function;
 import org.renjin.eval.Context;
 import org.renjin.primitives.io.serialization.RDataReader;
 import org.renjin.sexp.ListVector;

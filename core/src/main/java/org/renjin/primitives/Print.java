@@ -21,9 +21,9 @@
 
 package org.renjin.primitives;
 
-import com.google.common.base.Function;
-import com.google.common.collect.Iterables;
-import com.google.common.collect.Lists;
+import com.google.bc.common.base.Function;
+import com.google.bc.common.collect.Iterables;
+import com.google.bc.common.collect.Lists;
 import org.renjin.eval.Context;
 import org.renjin.invoke.annotations.Current;
 import org.renjin.invoke.annotations.Internal;

@@ -1,6 +1,6 @@
 package org.renjin.gcc.gimple.type;
 
-import com.google.common.base.Preconditions;
+import com.google.bc.common.base.Preconditions;
 import org.objectweb.asm.Type;
 
 public class GimpleRealType extends GimplePrimitiveType {

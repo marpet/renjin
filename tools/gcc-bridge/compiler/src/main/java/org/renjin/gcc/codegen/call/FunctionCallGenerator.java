@@ -1,7 +1,7 @@
 package org.renjin.gcc.codegen.call;
 
-import com.google.common.base.Optional;
-import com.google.common.collect.Lists;
+import com.google.bc.common.base.Optional;
+import com.google.bc.common.collect.Lists;
 import org.objectweb.asm.Type;
 import org.renjin.gcc.InternalCompilerException;
 import org.renjin.gcc.codegen.MethodGenerator;

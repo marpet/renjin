@@ -21,10 +21,10 @@
 
 package org.renjin.invoke.model;
 
-import com.google.common.base.Predicate;
-import com.google.common.collect.ImmutableList;
-import com.google.common.collect.Iterables;
-import com.google.common.collect.Lists;
+import com.google.bc.common.base.Predicate;
+import com.google.bc.common.collect.ImmutableList;
+import com.google.bc.common.collect.Iterables;
+import com.google.bc.common.collect.Lists;
 import org.apache.commons.math.complex.Complex;
 import org.apache.commons.math.special.Gamma;
 import org.renjin.eval.EvalException;

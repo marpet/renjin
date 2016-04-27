@@ -13,9 +13,9 @@ import org.renjin.compiler.ir.tac.statements.BasicBlockEndingStatement;
 import org.renjin.compiler.ir.tac.statements.Statement;
 
 
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
-import com.google.common.collect.Sets;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Maps;
+import com.google.bc.common.collect.Sets;
 
 import edu.uci.ics.jung.graph.DirectedGraph;
 import edu.uci.ics.jung.graph.DirectedSparseGraph;

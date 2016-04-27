@@ -1,6 +1,6 @@
 package org.renjin.primitives;
 
-import com.google.common.base.Charsets;
+import com.google.bc.common.base.Charsets;
 import org.renjin.eval.EvalException;
 import org.renjin.invoke.annotations.Internal;
 import org.renjin.sexp.RawVector;

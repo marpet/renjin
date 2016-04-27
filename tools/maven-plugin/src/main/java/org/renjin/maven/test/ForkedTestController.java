@@ -1,7 +1,7 @@
 package org.renjin.maven.test;
 
-import com.google.common.base.Charsets;
-import com.google.common.base.Joiner;
+import com.google.bc.common.base.Charsets;
+import com.google.bc.common.base.Joiner;
 import org.apache.maven.plugin.MojoExecutionException;
 
 import java.io.*;

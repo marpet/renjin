@@ -1,7 +1,7 @@
 package org.renjin.compiler.ir.tac.expressions;
 
-import com.google.common.collect.Lists;
-import com.google.common.collect.Sets;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Sets;
 import org.renjin.compiler.runtime.VariablePromise;
 import org.renjin.eval.Context;
 import org.renjin.eval.EvalException;
@@ -240,7 +240,7 @@ public class DynamicCall implements CallExpression {
   }
 
   public List<String> getArgumentNames() {
-    return Lists.transform(argumentNames, new com.google.common.base.Function<SEXP, String>() {
+    return Lists.transform(argumentNames, new com.google.bc.common.base.Function<SEXP, String>() {
 
       @Override
       public String apply(SEXP input) {

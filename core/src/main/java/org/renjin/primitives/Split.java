@@ -1,6 +1,6 @@
 package org.renjin.primitives;
 
-import com.google.common.collect.Maps;
+import com.google.bc.common.collect.Maps;
 import org.renjin.invoke.annotations.Internal;
 import org.renjin.sexp.*;
 

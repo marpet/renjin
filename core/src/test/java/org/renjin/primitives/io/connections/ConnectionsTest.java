@@ -1,7 +1,7 @@
 package org.renjin.primitives.io.connections;
 
-import com.google.common.base.Charsets;
-import com.google.common.io.Files;
+import com.google.bc.common.base.Charsets;
+import com.google.bc.common.io.Files;
 import org.junit.Test;
 import org.renjin.EvalTestCase;
 import org.renjin.sexp.IntVector;

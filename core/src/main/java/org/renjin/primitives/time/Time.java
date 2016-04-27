@@ -21,7 +21,7 @@
 
 package org.renjin.primitives.time;
 
-import com.google.common.base.Strings;
+import com.google.bc.common.base.Strings;
 import org.joda.time.*;
 import org.joda.time.chrono.ISOChronology;
 import org.joda.time.format.DateTimeFormatter;

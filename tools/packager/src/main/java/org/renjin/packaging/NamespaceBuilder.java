@@ -1,10 +1,10 @@
 package org.renjin.packaging;
 
-import com.google.common.base.Charsets;
-import com.google.common.collect.Lists;
-import com.google.common.io.CharSource;
-import com.google.common.io.Files;
-import com.google.common.primitives.UnsignedBytes;
+import com.google.bc.common.base.Charsets;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.io.CharSource;
+import com.google.bc.common.io.Files;
+import com.google.bc.common.primitives.UnsignedBytes;
 import org.renjin.eval.Context;
 import org.renjin.eval.EvalException;
 import org.renjin.eval.SessionBuilder;
@@ -21,7 +21,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import static com.google.common.base.Preconditions.checkNotNull;
+import static com.google.bc.common.base.Preconditions.checkNotNull;
 
 public class NamespaceBuilder {
 

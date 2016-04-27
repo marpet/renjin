@@ -21,8 +21,8 @@
 
 package org.renjin.primitives;
 
-import com.google.common.annotations.VisibleForTesting;
-import com.google.common.collect.Lists;
+import com.google.bc.common.annotations.VisibleForTesting;
+import com.google.bc.common.collect.Lists;
 import org.apache.commons.vfs2.FileObject;
 import org.apache.commons.vfs2.provider.local.LocalFile;
 import org.renjin.RVersion;

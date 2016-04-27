@@ -1,13 +1,13 @@
 package org.renjin.packaging;
 
-import com.google.common.base.Charsets;
-import com.google.common.base.Function;
-import com.google.common.base.Strings;
-import com.google.common.collect.ArrayListMultimap;
-import com.google.common.collect.Iterables;
-import com.google.common.io.ByteSource;
-import com.google.common.io.CharStreams;
-import com.google.common.io.Files;
+import com.google.bc.common.base.Charsets;
+import com.google.bc.common.base.Function;
+import com.google.bc.common.base.Strings;
+import com.google.bc.common.collect.ArrayListMultimap;
+import com.google.bc.common.collect.Iterables;
+import com.google.bc.common.io.ByteSource;
+import com.google.bc.common.io.CharStreams;
+import com.google.bc.common.io.Files;
 
 import java.io.File;
 import java.io.IOException;

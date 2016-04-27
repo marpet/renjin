@@ -8,7 +8,7 @@ import org.renjin.eval.Context;
 import org.renjin.sexp.SEXP;
 
 
-import com.google.common.collect.Sets;
+import com.google.bc.common.collect.Sets;
 
 /**
  * Checks whether op1 is greater than or equal to op2. 

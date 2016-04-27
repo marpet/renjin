@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.renjin</groupId>
     <artifactId>gcc-bridge-parent</artifactId>
-    <version>0.9.0-SNAPSHOT</version>
+    <version>0.9.0-BC</version>
   </parent>
 
   <name>Renjin GCC Bridge Microbenchmarks</name>

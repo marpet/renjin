@@ -2,7 +2,7 @@ package org.renjin.primitives.match;
 
 import org.renjin.sexp.Vector;
 
-import com.google.common.collect.UnmodifiableIterator;
+import com.google.bc.common.collect.UnmodifiableIterator;
 
 /**
  * Iterates over the indexes of a vector, from the beginning of the 

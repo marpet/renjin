@@ -1,7 +1,7 @@
 package org.renjin.primitives.packaging;
 
-import com.google.common.base.Optional;
-import com.google.common.collect.ImmutableSet;
+import com.google.bc.common.base.Optional;
+import com.google.bc.common.collect.ImmutableSet;
 import org.renjin.eval.Context;
 import org.renjin.eval.EvalException;
 import org.renjin.sexp.Frame;

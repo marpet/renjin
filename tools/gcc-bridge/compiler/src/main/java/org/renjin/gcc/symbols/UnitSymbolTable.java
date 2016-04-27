@@ -20,8 +20,8 @@ import org.renjin.gcc.gimple.expr.GimpleFunctionRef;
 import org.renjin.gcc.gimple.expr.GimpleSymbolRef;
 import org.renjin.gcc.gimple.type.GimpleType;
 
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Maps;
 
 /**
  * Provides mapping of symbols and functions visible within the compilation unit.

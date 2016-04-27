@@ -1,6 +1,6 @@
 package org.renjin.gcc.gimple.expr;
 
-import com.google.common.base.Predicate;
+import com.google.bc.common.base.Predicate;
 
 import java.util.List;
 

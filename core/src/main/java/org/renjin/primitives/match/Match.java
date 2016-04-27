@@ -6,7 +6,7 @@
  * Copyright (C) 2010 bedatadriven
  *
 
-import com.google.common.collect.UnmodifiableIterator;
+import com.google.bc.common.collect.UnmodifiableIterator;
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or

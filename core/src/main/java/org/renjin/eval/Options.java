@@ -10,7 +10,7 @@ import org.renjin.sexp.Null;
 import org.renjin.sexp.SEXP;
 import org.renjin.sexp.StringArrayVector;
 
-import com.google.common.collect.Maps;
+import com.google.bc.common.collect.Maps;
 
 /**
  * Session-level options for 

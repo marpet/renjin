@@ -1,7 +1,7 @@
 package org.renjin.cli.build;
 
-import com.google.common.base.Preconditions;
-import com.google.common.io.Files;
+import com.google.bc.common.base.Preconditions;
+import com.google.bc.common.io.Files;
 import org.renjin.RenjinVersion;
 
 import java.io.File;

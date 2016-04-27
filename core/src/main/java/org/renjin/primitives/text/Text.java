@@ -21,9 +21,9 @@
 
 package org.renjin.primitives.text;
 
-import com.google.common.base.Function;
-import com.google.common.base.Joiner;
-import com.google.common.collect.Lists;
+import com.google.bc.common.base.Function;
+import com.google.bc.common.base.Joiner;
+import com.google.bc.common.collect.Lists;
 import org.renjin.eval.Context;
 import org.renjin.eval.EvalException;
 import org.renjin.invoke.annotations.*;
@@ -39,7 +39,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import static com.google.common.collect.Iterables.transform;
+import static com.google.bc.common.collect.Iterables.transform;
 
 public class Text {
 

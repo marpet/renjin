@@ -1,11 +1,11 @@
 package org.renjin.gcc.analysis;
 
-import com.google.common.collect.Iterators;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
-import com.google.common.collect.PeekingIterator;
-import com.google.common.escape.Escaper;
-import com.google.common.escape.Escapers;
+import com.google.bc.common.collect.Iterators;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Maps;
+import com.google.bc.common.collect.PeekingIterator;
+import com.google.bc.common.escape.Escaper;
+import com.google.bc.common.escape.Escapers;
 import org.renjin.gcc.gimple.GimpleBasicBlock;
 import org.renjin.gcc.gimple.GimpleFunction;
 import org.renjin.gcc.gimple.statement.GimpleEdge;

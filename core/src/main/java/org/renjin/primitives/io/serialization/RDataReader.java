@@ -21,9 +21,9 @@
 
 package org.renjin.primitives.io.serialization;
 
-import com.google.common.collect.Lists;
-import com.google.common.io.ByteSource;
-import com.google.common.io.Closeables;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.io.ByteSource;
+import com.google.bc.common.io.Closeables;
 import org.apache.commons.math.complex.Complex;
 import org.renjin.eval.Context;
 import org.renjin.parser.NumericLiterals;

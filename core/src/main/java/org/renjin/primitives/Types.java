@@ -20,7 +20,7 @@
  */
 package org.renjin.primitives;
 
-import com.google.common.base.Strings;
+import com.google.bc.common.base.Strings;
 import org.renjin.eval.Context;
 import org.renjin.eval.EvalException;
 import org.renjin.eval.Options;

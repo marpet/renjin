@@ -1,7 +1,7 @@
 package org.renjin.invoke.codegen;
 
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Maps;
 import com.sun.codemodel.*;
 import org.renjin.eval.Context;
 import org.renjin.eval.EvalException;

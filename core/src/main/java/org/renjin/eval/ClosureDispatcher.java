@@ -21,19 +21,19 @@
 
 package org.renjin.eval;
 
-import com.google.common.base.Joiner;
-import com.google.common.collect.Collections2;
-import com.google.common.collect.Iterators;
-import com.google.common.collect.Lists;
-import com.google.common.collect.PeekingIterator;
+import com.google.bc.common.base.Joiner;
+import com.google.bc.common.collect.Collections2;
+import com.google.bc.common.collect.Iterators;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.PeekingIterator;
 import org.renjin.primitives.CollectionUtils;
 import org.renjin.primitives.special.ReturnException;
 import org.renjin.sexp.*;
 
 import java.util.*;
 
-import static com.google.common.collect.Collections2.filter;
-import static com.google.common.collect.Collections2.transform;
+import static com.google.bc.common.collect.Collections2.filter;
+import static com.google.bc.common.collect.Collections2.transform;
 
 
 public class ClosureDispatcher {

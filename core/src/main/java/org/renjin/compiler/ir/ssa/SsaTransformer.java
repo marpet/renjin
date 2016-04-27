@@ -14,9 +14,9 @@ import org.renjin.compiler.ir.tac.statements.Assignment;
 import org.renjin.compiler.ir.tac.statements.Statement;
 
 
-import com.google.common.collect.Iterables;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
+import com.google.bc.common.collect.Iterables;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Maps;
 
 /**
  * Transforms three-address IR code into 

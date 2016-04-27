@@ -1,6 +1,6 @@
 package org.renjin.primitives.io.connections;
 
-import com.google.common.base.Strings;
+import com.google.bc.common.base.Strings;
 import org.renjin.primitives.io.connections.Connection.Type;
 
 /**

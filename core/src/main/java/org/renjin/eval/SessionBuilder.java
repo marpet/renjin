@@ -1,7 +1,7 @@
 package org.renjin.eval;
 
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Maps;
 import org.apache.commons.vfs2.FileSystemManager;
 import org.renjin.primitives.packaging.ClasspathPackageLoader;
 import org.renjin.primitives.packaging.PackageLoader;

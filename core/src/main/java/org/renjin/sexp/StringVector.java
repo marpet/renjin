@@ -1,9 +1,9 @@
 package org.renjin.sexp;
 
-import com.google.common.base.Objects;
-import com.google.common.collect.Iterables;
-import com.google.common.collect.Lists;
-import com.google.common.collect.UnmodifiableIterator;
+import com.google.bc.common.base.Objects;
+import com.google.bc.common.collect.Iterables;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.UnmodifiableIterator;
 import org.apache.commons.math.complex.Complex;
 import org.renjin.parser.NumericLiterals;
 

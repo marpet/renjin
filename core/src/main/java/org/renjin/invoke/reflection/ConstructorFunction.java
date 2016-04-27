@@ -1,7 +1,7 @@
 package org.renjin.invoke.reflection;
 
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Maps;
 import org.renjin.eval.Context;
 import org.renjin.invoke.codegen.ArgumentIterator;
 import org.renjin.sexp.*;

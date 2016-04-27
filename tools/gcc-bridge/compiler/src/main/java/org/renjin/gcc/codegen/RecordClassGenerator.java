@@ -1,6 +1,6 @@
 package org.renjin.gcc.codegen;
 
-import com.google.common.io.Files;
+import com.google.bc.common.io.Files;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.ClassWriter;
 import org.objectweb.asm.Type;

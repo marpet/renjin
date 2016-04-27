@@ -1,6 +1,6 @@
 package org.renjin.sexp;
 
-import com.google.common.primitives.UnsignedBytes;
+import com.google.bc.common.primitives.UnsignedBytes;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.equalTo;

@@ -11,7 +11,7 @@ import org.renjin.sexp.StringArrayVector;
 import org.renjin.sexp.StringVector;
 import org.renjin.sexp.Symbol;
 
-import com.google.common.collect.Sets;
+import com.google.bc.common.collect.Sets;
 
 public class AllNamesVisitor extends SexpVisitor<StringVector> {
 

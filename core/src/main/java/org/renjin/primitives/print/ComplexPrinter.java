@@ -1,7 +1,7 @@
 package org.renjin.primitives.print;
 
 
-import com.google.common.base.Function;
+import com.google.bc.common.base.Function;
 import org.apache.commons.math.complex.Complex;
 import org.renjin.sexp.DoubleVector;
 

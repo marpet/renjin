@@ -9,7 +9,7 @@ import org.renjin.RVersion;
 import org.renjin.eval.Session;
 import org.renjin.eval.SessionBuilder;
 
-import com.google.common.collect.Lists;
+import com.google.bc.common.collect.Lists;
 
 public class RenjinScriptEngineFactory implements ScriptEngineFactory {
 

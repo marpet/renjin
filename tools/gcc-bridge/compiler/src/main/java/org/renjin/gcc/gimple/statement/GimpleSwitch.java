@@ -1,9 +1,9 @@
 package org.renjin.gcc.gimple.statement;
 
-import com.google.common.base.Joiner;
-import com.google.common.base.Preconditions;
-import com.google.common.base.Predicate;
-import com.google.common.collect.Lists;
+import com.google.bc.common.base.Joiner;
+import com.google.bc.common.base.Preconditions;
+import com.google.bc.common.base.Predicate;
+import com.google.bc.common.collect.Lists;
 import org.renjin.gcc.gimple.GimpleVisitor;
 import org.renjin.gcc.gimple.expr.GimpleExpr;
 

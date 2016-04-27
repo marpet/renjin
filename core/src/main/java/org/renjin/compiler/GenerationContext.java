@@ -7,8 +7,8 @@ import java.util.Map.Entry;
 import org.renjin.compiler.ir.tac.IRFunction;
 
 
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Maps;
 
 public class GenerationContext {
   private String className;

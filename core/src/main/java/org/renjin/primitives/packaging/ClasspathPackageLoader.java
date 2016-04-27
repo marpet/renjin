@@ -1,6 +1,6 @@
 package org.renjin.primitives.packaging;
 
-import com.google.common.base.Optional;
+import com.google.bc.common.base.Optional;
 
 /**
  * Loads Packages from the class path

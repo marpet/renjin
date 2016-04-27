@@ -21,7 +21,7 @@
 
 package org.renjin.primitives.text.regex;
 
-import com.google.common.collect.Lists;
+import com.google.bc.common.collect.Lists;
 
 import java.util.List;
 

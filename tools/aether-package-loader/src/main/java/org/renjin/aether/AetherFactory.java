@@ -1,6 +1,6 @@
 package org.renjin.aether;
 
-import com.google.common.base.Strings;
+import com.google.bc.common.base.Strings;
 import org.apache.maven.repository.internal.MavenRepositorySystemUtils;
 import org.apache.maven.settings.Settings;
 import org.apache.maven.settings.building.DefaultSettingsBuilderFactory;

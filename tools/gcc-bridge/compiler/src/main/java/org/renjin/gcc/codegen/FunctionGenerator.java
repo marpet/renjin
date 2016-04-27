@@ -1,6 +1,6 @@
 package org.renjin.gcc.codegen;
 
-import com.google.common.collect.Maps;
+import com.google.bc.common.collect.Maps;
 
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.Handle;

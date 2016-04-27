@@ -21,7 +21,7 @@
 
 package org.renjin.primitives;
 
-import com.google.common.collect.Sets;
+import com.google.bc.common.collect.Sets;
 
 import java.util.Set;
 

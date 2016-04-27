@@ -11,7 +11,7 @@ import org.renjin.sexp.StringVector;
 import org.renjin.sexp.Symbols;
 import org.renjin.stats.internals.models.TermsObject.Term;
 
-import com.google.common.collect.Lists;
+import com.google.bc.common.collect.Lists;
 
 /**
  * Constructs a model matrix from a {@link TermsObject} and a

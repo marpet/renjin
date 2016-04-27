@@ -19,7 +19,7 @@
   <parent>
     <groupId>org.renjin.math</groupId>
     <artifactId>renjin-math-parent</artifactId>
-    <version>0.9.0-SNAPSHOT</version>
+    <version>0.9.0-BC</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 

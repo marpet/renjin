@@ -21,7 +21,7 @@
 
 package org.renjin.sexp;
 
-import com.google.common.base.Joiner;
+import com.google.bc.common.base.Joiner;
 
 import java.util.List;
 

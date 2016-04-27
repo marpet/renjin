@@ -21,8 +21,8 @@
 
 package org.renjin;
 
-import com.google.common.collect.Lists;
-import com.google.common.primitives.UnsignedBytes;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.primitives.UnsignedBytes;
 import org.apache.commons.math.complex.Complex;
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;

@@ -1,10 +1,10 @@
 package org.renjin.packaging;
 
-import com.google.common.annotations.VisibleForTesting;
-import com.google.common.base.Joiner;
-import com.google.common.collect.HashMultimap;
-import com.google.common.collect.Multimap;
-import com.google.common.io.Closer;
+import com.google.bc.common.annotations.VisibleForTesting;
+import com.google.bc.common.base.Joiner;
+import com.google.bc.common.collect.HashMultimap;
+import com.google.bc.common.collect.Multimap;
+import com.google.bc.common.io.Closer;
 import org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream;
 import org.renjin.eval.EvalException;
 import org.renjin.eval.Session;

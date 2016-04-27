@@ -1,6 +1,6 @@
 package org.renjin.sexp;
 
-import com.google.common.collect.UnmodifiableIterator;
+import com.google.bc.common.collect.UnmodifiableIterator;
 import org.apache.commons.math.complex.Complex;
 
 import java.util.Iterator;

@@ -1,7 +1,7 @@
 package org.renjin.gcc.peephole;
 
-import com.google.common.collect.Lists;
-import com.google.common.collect.Sets;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Sets;
 import org.objectweb.asm.Label;
 import org.objectweb.asm.tree.AbstractInsnNode;
 import org.objectweb.asm.tree.JumpInsnNode;

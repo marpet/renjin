@@ -1,6 +1,6 @@
 package org.renjin.gcc;
 
-import com.google.common.base.Charsets;
+import com.google.bc.common.base.Charsets;
 
 import org.junit.Ignore;
 import org.junit.Test;

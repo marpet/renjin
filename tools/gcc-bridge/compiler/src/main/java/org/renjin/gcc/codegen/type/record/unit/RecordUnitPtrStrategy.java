@@ -1,6 +1,6 @@
 package org.renjin.gcc.codegen.type.record.unit;
 
-import com.google.common.base.Optional;
+import com.google.bc.common.base.Optional;
 import org.objectweb.asm.Type;
 import org.renjin.gcc.InternalCompilerException;
 import org.renjin.gcc.codegen.MethodGenerator;

@@ -21,7 +21,7 @@
 
 package org.renjin.primitives.text.regex;
 
-import com.google.common.base.Predicate;
+import com.google.bc.common.base.Predicate;
 import org.renjin.eval.EvalException;
 
 /**

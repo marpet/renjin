@@ -1,7 +1,7 @@
 package org.renjin.gcc.analysis;
 
-import com.google.common.annotations.VisibleForTesting;
-import com.google.common.collect.Maps;
+import com.google.bc.common.annotations.VisibleForTesting;
+import com.google.bc.common.collect.Maps;
 import org.renjin.gcc.codegen.type.record.RecordClassTypeStrategy;
 import org.renjin.gcc.codegen.type.record.unit.RecordUnitPtrStrategy;
 import org.renjin.gcc.gimple.GimpleBasicBlock;

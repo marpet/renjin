@@ -6,7 +6,7 @@ import org.renjin.sexp.SEXP;
 import org.renjin.sexp.Symbol;
 
 
-import com.google.common.collect.Maps;
+import com.google.bc.common.collect.Maps;
 
 public class FunctionCallTranslators {
 

@@ -5,9 +5,9 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 
-import com.google.common.collect.Iterables;
-import com.google.common.collect.Iterators;
-import com.google.common.collect.Lists;
+import com.google.bc.common.collect.Iterables;
+import com.google.bc.common.collect.Iterators;
+import com.google.bc.common.collect.Lists;
 
 public class TermList implements Iterable<Term> {
   private List<Term> list = Lists.newArrayList();

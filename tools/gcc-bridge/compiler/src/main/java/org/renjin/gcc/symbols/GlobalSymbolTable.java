@@ -1,8 +1,8 @@
 package org.renjin.gcc.symbols;
 
-import com.google.common.base.Preconditions;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
+import com.google.bc.common.base.Preconditions;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Maps;
 
 import org.objectweb.asm.Handle;
 import org.renjin.gcc.InternalCompilerException;

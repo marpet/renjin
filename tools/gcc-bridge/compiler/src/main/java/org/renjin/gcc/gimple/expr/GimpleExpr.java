@@ -3,7 +3,7 @@ package org.renjin.gcc.gimple.expr;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonSubTypes.Type;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
-import com.google.common.base.Predicate;
+import com.google.bc.common.base.Predicate;
 import org.renjin.gcc.gimple.type.GimpleType;
 
 import java.util.List;

@@ -1,9 +1,9 @@
 package org.renjin.maven;
 
-import com.google.common.base.Strings;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Sets;
-import com.google.common.io.Files;
+import com.google.bc.common.base.Strings;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Sets;
+import com.google.bc.common.io.Files;
 import org.apache.maven.artifact.Artifact;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;

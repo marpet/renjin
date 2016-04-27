@@ -21,7 +21,7 @@
 
 package org.renjin.primitives;
 
-import com.google.common.base.Charsets;
+import com.google.bc.common.base.Charsets;
 import org.junit.Test;
 import org.renjin.EvalTestCase;
 import org.renjin.sexp.IntVector;

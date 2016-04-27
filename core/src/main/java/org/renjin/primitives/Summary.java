@@ -21,7 +21,7 @@
 
 package org.renjin.primitives;
 
-import com.google.common.math.IntMath;
+import com.google.bc.common.math.IntMath;
 import org.apache.commons.math.complex.Complex;
 import org.renjin.eval.Context;
 import org.renjin.eval.EvalException;

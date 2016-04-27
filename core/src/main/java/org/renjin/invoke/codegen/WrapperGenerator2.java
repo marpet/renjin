@@ -1,7 +1,7 @@
 package org.renjin.invoke.codegen;
 
-import com.google.common.base.Charsets;
-import com.google.common.io.Files;
+import com.google.bc.common.base.Charsets;
+import com.google.bc.common.io.Files;
 import com.sun.codemodel.CodeWriter;
 import com.sun.codemodel.JCodeModel;
 import com.sun.codemodel.JPackage;

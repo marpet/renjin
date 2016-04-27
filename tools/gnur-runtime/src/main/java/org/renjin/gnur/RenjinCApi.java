@@ -1,7 +1,7 @@
 package org.renjin.gnur;
 
 
-import com.google.common.collect.Sets;
+import com.google.bc.common.collect.Sets;
 import org.apache.commons.math.util.FastMath;
 import org.renjin.eval.EvalException;
 import org.renjin.gcc.runtime.BytePtr;

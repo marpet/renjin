@@ -1,6 +1,6 @@
 package org.renjin.gnur.api;
 
-import com.google.common.base.Charsets;
+import com.google.bc.common.base.Charsets;
 import org.renjin.gcc.runtime.BytePtr;
 import org.renjin.sexp.AbstractSEXP;
 import org.renjin.sexp.SexpVisitor;

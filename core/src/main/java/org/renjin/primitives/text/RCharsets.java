@@ -2,7 +2,7 @@ package org.renjin.primitives.text;
 
 import java.nio.charset.Charset;
 
-import com.google.common.base.Charsets;
+import com.google.bc.common.base.Charsets;
 
 public final class RCharsets {
   

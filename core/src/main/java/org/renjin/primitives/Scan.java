@@ -12,7 +12,7 @@ import org.renjin.sexp.LogicalArrayVector;
 
 import org.renjin.sexp.LogicalArrayVector;
 
-import com.google.common.base.Strings;
+import com.google.bc.common.base.Strings;
  is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
@@ -29,8 +29,8 @@ import com.google.common.base.Strings;
 
 package org.renjin.primitives;
 
-import com.google.common.base.Strings;
-import com.google.common.collect.Lists;
+import com.google.bc.common.base.Strings;
+import com.google.bc.common.collect.Lists;
 import org.renjin.eval.Context;
 import org.renjin.invoke.annotations.Current;
 import org.renjin.invoke.annotations.Internal;

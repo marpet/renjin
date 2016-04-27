@@ -27,7 +27,7 @@ import org.renjin.sexp.ExpressionVector;
 import org.renjin.sexp.SEXP;
 import org.renjin.studio.console.Repl;
 
-import com.google.common.collect.Lists;
+import com.google.bc.common.collect.Lists;
 
 public class ScriptEditorFrame extends JPanel {
 

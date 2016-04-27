@@ -26,8 +26,8 @@ import org.renjin.sexp.PairList;
 import org.renjin.sexp.SEXP;
 import org.renjin.sexp.Symbol;
 
-import com.google.common.base.Function;
-import com.google.common.base.Predicate;
+import com.google.bc.common.base.Function;
+import com.google.bc.common.base.Predicate;
 
 public class CollectionUtils {
 

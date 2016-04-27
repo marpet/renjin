@@ -1,7 +1,7 @@
 package org.renjin.compiler.pipeline.accessor;
 
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Maps;
 import org.objectweb.asm.*;
 import org.renjin.compiler.pipeline.ComputeMethod;
 import org.renjin.compiler.pipeline.DeferredNode;

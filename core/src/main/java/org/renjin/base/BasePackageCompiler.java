@@ -1,7 +1,7 @@
 package org.renjin.base;
 
-import com.google.common.base.Predicate;
-import com.google.common.collect.Lists;
+import com.google.bc.common.base.Predicate;
+import com.google.bc.common.collect.Lists;
 import org.renjin.eval.Context;
 import org.renjin.eval.Session;
 import org.renjin.eval.SessionBuilder;

@@ -1,10 +1,10 @@
 package org.renjin.gcc;
 
 
-import com.google.common.base.Strings;
-import com.google.common.collect.Iterables;
-import com.google.common.collect.Lists;
-import com.google.common.io.Files;
+import com.google.bc.common.base.Strings;
+import com.google.bc.common.collect.Iterables;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.io.Files;
 import org.junit.Before;
 import org.renjin.gcc.gimple.CallingConvention;
 import org.renjin.gcc.gimple.CallingConventions;

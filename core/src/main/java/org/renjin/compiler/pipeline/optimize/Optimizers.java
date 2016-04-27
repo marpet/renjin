@@ -1,6 +1,6 @@
 package org.renjin.compiler.pipeline.optimize;
 
-import com.google.common.collect.Lists;
+import com.google.bc.common.collect.Lists;
 import org.renjin.compiler.pipeline.DeferredGraph;
 import org.renjin.compiler.pipeline.DeferredNode;
 

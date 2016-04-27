@@ -13,8 +13,8 @@ import org.renjin.gcc.gimple.CallingConventions;
 import org.renjin.gcc.gimple.GimpleCompilationUnit;
 import org.renjin.gcc.gimple.GimpleFunction;
 
-import com.google.common.base.Strings;
-import com.google.common.collect.Lists;
+import com.google.bc.common.base.Strings;
+import com.google.bc.common.collect.Lists;
 
 public class AbstractGccCppTest extends AbstractGccTest {
 

@@ -33,7 +33,7 @@ import org.renjin.sexp.SpecialFunction;
 import org.renjin.sexp.StringVector;
 import org.renjin.sexp.Symbol;
 
-import com.google.common.collect.Iterables;
+import com.google.bc.common.collect.Iterables;
 
 public class SwitchFunction extends SpecialFunction {
 

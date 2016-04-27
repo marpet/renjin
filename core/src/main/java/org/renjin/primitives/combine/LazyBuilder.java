@@ -1,7 +1,7 @@
 package org.renjin.primitives.combine;
 
 
-import com.google.common.collect.Lists;
+import com.google.bc.common.collect.Lists;
 import org.renjin.primitives.combine.view.CombinedDoubleVector;
 import org.renjin.primitives.combine.view.CombinedIntVector;
 import org.renjin.primitives.combine.view.CombinedStringVector;

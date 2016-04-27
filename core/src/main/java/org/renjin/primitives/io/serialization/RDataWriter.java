@@ -21,7 +21,7 @@
 
 package org.renjin.primitives.io.serialization;
 
-import com.google.common.collect.Maps;
+import com.google.bc.common.collect.Maps;
 import org.apache.commons.math.complex.Complex;
 import org.renjin.eval.Context;
 import org.renjin.primitives.io.serialization.Serialization.SERIALIZATION_TYPE;

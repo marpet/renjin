@@ -10,7 +10,7 @@ import org.renjin.eval.EvalException;
 import org.renjin.sexp.SEXP;
 
 
-import com.google.common.collect.Lists;
+import com.google.bc.common.collect.Lists;
 
 public class ConstructorBinding implements MemberBinding {
 

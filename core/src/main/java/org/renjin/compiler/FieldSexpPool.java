@@ -9,7 +9,7 @@ import org.renjin.sexp.FunctionCall;
 import org.renjin.sexp.SEXP;
 
 
-import com.google.common.collect.Lists;
+import com.google.bc.common.collect.Lists;
 
 /**
  * Maintains a pool of SEXP literals stored in class fields.

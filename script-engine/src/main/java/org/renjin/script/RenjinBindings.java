@@ -1,8 +1,8 @@
 package org.renjin.script;
 
-import com.google.common.base.Function;
-import com.google.common.collect.Collections2;
-import com.google.common.collect.Sets;
+import com.google.bc.common.base.Function;
+import com.google.bc.common.collect.Collections2;
+import com.google.bc.common.collect.Sets;
 import org.renjin.invoke.reflection.converters.Converters;
 import org.renjin.sexp.Frame;
 import org.renjin.sexp.Null;

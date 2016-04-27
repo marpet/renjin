@@ -1,11 +1,11 @@
 package org.renjin.tools;
 
 
-import com.google.common.hash.Funnels;
-import com.google.common.hash.Hasher;
-import com.google.common.hash.Hashing;
-import com.google.common.io.ByteStreams;
-import com.google.common.io.Closeables;
+import com.google.bc.common.hash.Funnels;
+import com.google.bc.common.hash.Hasher;
+import com.google.bc.common.hash.Hashing;
+import com.google.bc.common.io.ByteStreams;
+import com.google.bc.common.io.Closeables;
 import org.apache.commons.vfs2.FileObject;
 import org.renjin.eval.Context;
 import org.renjin.invoke.annotations.Current;

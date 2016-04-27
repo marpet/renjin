@@ -4,7 +4,7 @@ import java.util.Iterator;
 
 import org.joda.time.DateTime;
 
-import com.google.common.collect.UnmodifiableIterator;
+import com.google.bc.common.collect.UnmodifiableIterator;
 
 public abstract class TimeVector implements Iterable<DateTime> {
 

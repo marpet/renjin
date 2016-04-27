@@ -1,10 +1,10 @@
 package org.renjin.maven.test;
 
-import com.google.common.annotations.VisibleForTesting;
-import com.google.common.base.Charsets;
-import com.google.common.base.Joiner;
-import com.google.common.base.Strings;
-import com.google.common.io.Files;
+import com.google.bc.common.annotations.VisibleForTesting;
+import com.google.bc.common.base.Charsets;
+import com.google.bc.common.base.Joiner;
+import com.google.bc.common.base.Strings;
+import com.google.bc.common.io.Files;
 import jline.UnsupportedTerminal;
 import jline.console.ConsoleReader;
 import org.renjin.eval.Context;

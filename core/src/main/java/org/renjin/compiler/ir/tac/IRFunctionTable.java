@@ -6,7 +6,7 @@ import java.util.List;
 import org.renjin.sexp.PairList;
 import org.renjin.sexp.SEXP;
 
-import com.google.common.collect.Lists;
+import com.google.bc.common.collect.Lists;
 
 
 public class IRFunctionTable implements Iterable<IRFunction> {

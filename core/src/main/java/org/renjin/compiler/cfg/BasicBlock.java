@@ -1,9 +1,9 @@
 package org.renjin.compiler.cfg;
 
-import com.google.common.base.Predicates;
-import com.google.common.collect.Iterables;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Sets;
+import com.google.bc.common.base.Predicates;
+import com.google.bc.common.collect.Iterables;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.collect.Sets;
 import org.renjin.compiler.ir.ssa.PhiFunction;
 import org.renjin.compiler.ir.tac.IRBody;
 import org.renjin.compiler.ir.tac.IRLabel;

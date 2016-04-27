@@ -15,8 +15,8 @@ import org.renjin.compiler.ir.tac.IRBodyBuilder;
 import org.renjin.parser.RParser;
 import org.renjin.sexp.ExpressionVector;
 
-import com.google.common.base.Charsets;
-import com.google.common.io.Resources;
+import com.google.bc.common.base.Charsets;
+import com.google.bc.common.io.Resources;
 
 
 public class ControlFlowGraphTest extends CompilerTestCase {

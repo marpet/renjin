@@ -1,7 +1,7 @@
 package org.renjin.primitives.packaging;
 
-import com.google.common.collect.Iterables;
-import com.google.common.io.CharSource;
+import com.google.bc.common.collect.Iterables;
+import com.google.bc.common.io.CharSource;
 import org.hamcrest.Matchers;
 import org.junit.Before;
 import org.junit.Test;

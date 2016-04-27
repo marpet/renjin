@@ -21,7 +21,7 @@
 
 package org.renjin.sexp;
 
-import com.google.common.collect.Maps;
+import com.google.bc.common.collect.Maps;
 import org.renjin.eval.EvalException;
 
 import java.util.HashMap;

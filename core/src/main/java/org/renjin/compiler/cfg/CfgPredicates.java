@@ -5,7 +5,7 @@ import org.renjin.compiler.ir.tac.expressions.Variable;
 import org.renjin.compiler.ir.tac.statements.Assignment;
 import org.renjin.compiler.ir.tac.statements.Statement;
 
-import com.google.common.base.Predicate;
+import com.google.bc.common.base.Predicate;
 
 public class CfgPredicates {
   private CfgPredicates() {}

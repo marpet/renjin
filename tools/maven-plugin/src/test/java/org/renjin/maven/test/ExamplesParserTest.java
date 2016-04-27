@@ -1,8 +1,8 @@
 package org.renjin.maven.test;
 
 
-import com.google.common.collect.Lists;
-import com.google.common.io.Files;
+import com.google.bc.common.collect.Lists;
+import com.google.bc.common.io.Files;
 import junit.framework.TestCase;
 
 import java.io.File;

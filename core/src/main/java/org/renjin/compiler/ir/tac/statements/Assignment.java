@@ -13,7 +13,7 @@ import org.renjin.compiler.ir.tac.expressions.Variable;
 import org.renjin.eval.Context;
 
 
-import com.google.common.collect.Sets;
+import com.google.bc.common.collect.Sets;
 
 
 public class Assignment implements Statement {

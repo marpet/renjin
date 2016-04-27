@@ -1,6 +1,6 @@
 package org.renjin.gcc.gimple.type;
 
-import com.google.common.base.Strings;
+import com.google.bc.common.base.Strings;
 import org.renjin.gcc.gimple.expr.GimpleFieldRef;
 
 public class GimpleField {
